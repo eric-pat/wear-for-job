@@ -1,0 +1,51 @@
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+    color: rgb(5, 5, 92);
+ }
+
+footer {
+    left:0px;
+    bottom:0px;
+    width:100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.title {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+}
+
+.texte {
+    text-align: center;
+}
+
+.texte2 {
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
+.wear {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-na {
+  width: 200px;
+  height: 100px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: space-around;
+}
