@@ -1,84 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="custom.css" />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="custom.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div>
+      <img src="images/logo-amorce.png" alt="image" class="logo" />
+    </div>
+  </header>
+  <!-- End Header -->
+  <!-- Présentation -->
+  <section>
+    <div>
+      <h1 class="title">Une Tenue pour un JOB</h1>
+      <div class="texte">
+        <h2>Besoin d'une tenue pour un entretien d'embauche ?</h2>
+      </div>
+      <div class="wear">
+        <img src="images/Clothes-Vector-Background-PNG-Image.png" alt="image" />
+      </div>
       <div>
-        <img src="images/logo-amorce.png" alt="image" class="logo" />
+        <p class="texte texte2">
+          Le Secours Catholique et le secours populaire<br />en partenariat
+          avec Amorce de Parcours,<br />vous offrent une tenue pour vous
+          présenter à votre entretien.
+        </p>
       </div>
-    </header>
+    </div>
+  </section>
+  <!-- End Présentation -->
+  <!-- Step -->
+  <section class="">
+    <h2 class="title__step">les Étapes:</h2>
+    <!-- list -->
+    <ol class="step__list">
+      <li>
+        <p class="step">
+          <i class="fas fa-list-check" id="icon-step"></i>Établir un Bon
+          auprès d'amorce de Parcours
+        </p>
+      </li>
+      <li>
+        <p class="step">
+          <i class="fas fa-shirt" id="icon-step"></i>Nos partenaires vous
+          donnent une tenue
+        </p>
+      </li>
+      <li>
+        <p class="step">
+          <i class="fas fa-briefcase" id="icon-step"></i>Vous allez à votre
+          entretien
+        </p>
+      </li>
+    </ol>
+    <!-- End List -->
+  </section>
+  <!-- End Step -->
+  <!-- Button scroll-top -->
+  <button onclick="topFunction()" id="myBtn" title="vers le haut">
+    <i class="fa-solid fa-arrow-up" id="arrow-up"></i>
+  </button>
+  <!-- End Button scroll-top -->
+  <!-- Footer -->
+  <footer>
+    <div class="logo-footer">
+      <img src="images/logo-nouvelle-aquitaine.jpg" alt="image" class="logo-na" />
+      <img src="images/logo-secours-populaire.png" alt="image" class="logo" />
+      <img src="images/logo-cibc.png" alt="image" class="logo" />
+      <img src="images/logo-amorce.png" alt="image" class="logo" />
+      <img src="images/Logo-Secours-Catholique.png" alt="image" class="logo" />
+    </div>
+  </footer>
+  <!-- End Footer -->
+</body>
 
-    <section>
-      <div>
-        <h1 class="title">Un Don pour un JOB</h1>
-        <div class="texte">
-          <h2>Besoin d'une tenue pour un entretien d'embauche ?</h2>
-        </div>
-        <div class="wear">
-          <img
-            src="images/Clothes-Vector-Background-PNG-Image.png"
-            alt="image"
-          />
-        </div>
-        <div>
-          <p class="texte texte2">
-            Le Secours Catholique et le secours populaire<br />en partenariat
-            avec Amorce de Parcours,<br />vous offrent une tenue pour vous
-            présenter à votre entretien.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="step">
-        <li>Étapes 1</li>
-        <li>Étapes 2</li>
-        <li>Étapes 3</li>
-        <li>Étapes 4</li>
-      </div>
-    </section>
-    <button onclick="topFunction()" id="myBtn" title="vers le haut">
-      <i class="fa-solid fa-arrow-up" id="arrow-up"></i>
-    </button>
-    <footer>
-      <div class="logo-footer">
-        <img
-          src="images/logo-nouvelle-aquitaine.jpg"
-          alt="image"
-          class="logo-na"
-        />
-        <img src="images/logo-secours-populaire.png" alt="image" class="logo" />
-        <img src="images/logo-cibc.png" alt="image" class="logo" />
-        <img src="images/logo-amorce.png" alt="image" class="logo" />
-        <img
-          src="images/Logo-Secours-Catholique.png"
-          alt="image"
-          class="logo"
-        />
-      </div>
-    </footer>
-  </body>
 </html>
 
 <script src="custom.js"></script>

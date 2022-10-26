@@ -1,20 +1,21 @@
-html, body {
-    margin:0;
-    padding:0;
-    height:100%;
-    color: rgb(5, 5, 92);
- }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: rgb(5, 5, 92);
+}
 
 header {
   margin: 20px 0 0 20px;
-} 
+}
 
 footer {
-    left:0px;
-    bottom:0px;
-    width:100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .title {
@@ -24,12 +25,12 @@ footer {
 }
 
 .texte {
-    text-align: center;
+  text-align: center;
 }
 
 .texte2 {
-    font-size: 2rem;
-    margin-top: 50px;
+  font-size: 2rem;
+  margin-top: 50px;
 }
 
 .wear {
@@ -49,8 +50,8 @@ footer {
 }
 
 .logo-footer {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 #myBtn {
@@ -65,10 +66,31 @@ footer {
 }
 
 #arrow-up {
-  color:  rgb(5, 5, 92);
+  color: rgb(5, 5, 92);
 }
 
-.step {
+.title__step {
+  text-align: center;
+  margin: 50px 0 20px 0;
+}
+.step__list {
   display: flex;
   justify-content: space-around;
+  border-radius: 20px;
+  margin: 10px 0 10px 0;
+  width: 100%;
+}
+.step {
+  border: 0;
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  height: 75px;
+  margin: 10px 10px 10px 0;
+  width: 100%;
+}
+
+#icon-step {
+  margin: 0 10px 0 10px;
 }
