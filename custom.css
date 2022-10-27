@@ -42,6 +42,7 @@ footer {
 .logo-na {
   width: 200px;
   height: 100px;
+  margin-bottom: 20px;
 }
 
 .logo {
@@ -79,6 +80,7 @@ footer {
   border-radius: 20px;
   margin: 10px 0 10px 0;
   width: 100%;
+  font-size: 20px;
 }
 .step {
   border: 0;
@@ -91,6 +93,163 @@ footer {
   width: 100%;
 }
 
-#icon-step {
+.icon-step {
   margin: 0 10px 0 10px;
 }
+
+.appear {
+  transition: all 0.8s;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.appear.inview {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.3s;
+}
+
+/*-- CSS Mobile -- */
+
+@media screen and (max-width: 399px)
+  {
+    h2 {
+      font-size: 0.9rem;
+    }
+    header {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0 0 0 ;
+    }
+    .title {
+      font-size: 2rem;
+      margin-top: 15px;
+    }
+    img {
+      width: 60%;
+    }
+    .texte2 {
+      font-size: 1rem;
+    }
+    .logo {
+      width: 50px;
+      height: 50px;
+    }
+    .logo-na {
+      width: 100px;
+      height: 50px;
+    }
+    .step {
+      font-size: 1rem;
+    }
+    .step__list {
+      flex-direction: column;
+    }
+    li {
+      margin-right: 20px;
+    }
+    #myBtn {
+      visibility: hidden;
+    }
+    #logo {
+      width: 75px;
+      height: 75px;
+    }
+   }
+
+@media screen and (min-width: 400px) and (max-width: 767px)
+ {
+  h2 {
+    font-size: 1rem;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0 ;
+  }
+  .title {
+    font-size: 2rem;
+    margin-top: 15px;
+  }
+  img {
+    width: 60%;
+  }
+  .texte2 {
+    font-size: 1rem;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  .logo-na {
+    width: 100px;
+    height: 50px;
+  }
+  .step {
+    font-size: 1rem;
+  }
+  .step__list {
+    flex-direction: column;
+  }
+  li {
+    margin-right: 20px;
+  }
+  #myBtn {
+    visibility: hidden;
+  }
+  #logo {
+    width: 75px;
+    height: 75px;
+  }
+ }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) 
+{
+  h2 {
+    font-size: 1.5rem;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0 ;
+  }
+  .title {
+    font-size: 2rem;
+    margin-top: 15px;
+  }
+  img {
+    width: 60%;
+  }
+  .texte2 {
+    font-size: 1.5rem;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  .logo-na {
+    width: 100px;
+    height: 50px;
+  }
+  .step {
+    font-size: 1.5rem;
+  }
+  .step__list {
+    flex-direction: column;
+  }
+  li {
+    margin-right: 20px;
+  }
+  #myBtn {
+    visibility: hidden;
+  }
+  #logo {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+
+
+
+

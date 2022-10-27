@@ -1,3 +1,4 @@
+//-- scroll-top--//
 // Get the button:
 let mybutton = document.getElementById("myBtn");
 
@@ -17,3 +18,19 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+//--------------//
+
+//-- Animation step --//
+const appear = document.querySelector('.appear'); 
+const cb = function(entries){
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('inview');
+    }else{
+      entry.target.classList.remove('inview');
+    }
+  });
+}
+const io = new IntersectionObserver(cb);
+io.observe(appear);
