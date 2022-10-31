@@ -140,6 +140,13 @@ footer {
   justify-content: center;
 }
 
+.logo-domaine {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  text-align: center;
+}
+
 /*-- CSS Mobile -- */
 
 @media screen and (max-width: 399px)
