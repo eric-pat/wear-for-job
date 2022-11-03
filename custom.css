@@ -5,7 +5,7 @@ body {
   height: 100%;
   color: rgb(5, 5, 92);
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -73,8 +73,8 @@ footer {
   align-items: center;
   color: white;
   width: fit-content; /*adapte la taille du cadre au texte*/
-  margin: 50px;
-  text-align: center ; /*centre le texte dans le cadre.*/
+  margin: 60px;
+  text-align: center; /*centre le texte dans le cadre.*/
   justify-content: center;
 }
 
@@ -84,20 +84,39 @@ footer {
   text-align: center;
   display: flex;
   align-items: center;
-  background-color: rgb(5, 5, 92) ; /*détermine la couleur de fond de l'encadrement.*/
+  background-color: rgb(
+    5,
+    5,
+    92
+  ); /*détermine la couleur de fond de l'encadrement.*/
   height: 150px;
   border-radius: 10px;
   padding: 10px;
 }
 
 .objectif {
-  margin-right: 20px;
+  margin: 60px 60px 0 0;
   height: 150px;
   width: 150px;
   display: flex;
   justify-content: center;
-  
+  transform: translate(0px);
+  animation: float 6s ease-in-out infinite;
 }
+
+/* -- animation fusée -- */
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(60px, -120px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+/* -- End animation fusée -- */
 
 .logo {
   height: 100px;
@@ -182,89 +201,100 @@ footer {
 
 /*-- CSS Mobile -- */
 
-@media screen and (max-width: 399px)
-  {
-    h2 {
-      font-size: 1rem;
-    }
-    header {
-      display: flex;
-      justify-content: center;
-      margin: 20px 0 0 0 ;
-    }
-    .nav-item {
-      font-size: 16px;
-      margin-right: 20px;
-    }
-    .title {
-      font-size: 2rem;
-      margin-top: 15px;
-    }
-    .texte2 {
-      font-size: 1rem;
-    }
-    .wear {
-      margin-top: 40px;
-      height: 200px;
-    }
-    .logo-footer{
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .logo {
-      height: 75px;
-      margin-bottom: 10px;
-    }
-    .step {
-      font-size: 1rem;
-    }
-    .step__list {
-      flex-direction: column;
-    }
-    li {
-      margin-right: 20px;
-    }
-    #myBtn {
-      visibility: hidden;
-    }
-    #logo {
-      width: 75px;
-      height: 75px;
-    }
-    footer {
-      padding-bottom: 10px;
-    }
-    .presentation {
-      flex-direction: column;
-      margin: 0px;
-      padding: 0px;
-    }
-    .presentation-text {
-      width: 100%;
-      font-size: 16px;
-      background-image: none;
-      padding: 5px;
-      align-items: normal;
-      border-radius: 0px;
-    }
-    #fusee {
-      width: 150px;
-      height: 150px;
-    }
-    .objectif {
-      margin: 20px 0 20px 0;
-    }
-   }
-
-@media screen and (min-width: 400px) and (max-width: 767px)
- {
+@media screen and (max-width: 399px) {
   h2 {
     font-size: 1rem;
   }
   header {
     display: flex;
     justify-content: center;
-    margin: 20px 0 0 0 ;
+    margin: 20px 0 0 0;
+  }
+  .nav-item {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  .title {
+    font-size: 2rem;
+    margin-top: 15px;
+  }
+  .texte2 {
+    font-size: 1rem;
+  }
+  .wear {
+    margin-top: 40px;
+    height: 200px;
+  }
+  .logo-footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .logo {
+    height: 75px;
+    margin-bottom: 10px;
+  }
+  .step {
+    font-size: 1rem;
+  }
+  .step__list {
+    flex-direction: column;
+  }
+  li {
+    margin-right: 20px;
+  }
+  #myBtn {
+    visibility: hidden;
+  }
+  #logo {
+    width: 75px;
+    height: 75px;
+  }
+  footer {
+    padding-bottom: 10px;
+  }
+  .presentation {
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+  }
+  .presentation-text {
+    width: 100%;
+    font-size: 16px;
+    background-image: none;
+    padding: 5px;
+    align-items: normal;
+    border-radius: 0px;
+  }
+  #fusee {
+    width: 150px;
+    height: 150px;
+  }
+  .objectif {
+    margin: 20px 0 20px 0;
+  }
+  /* -- animation fusée -- */
+  @keyframes float {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(20px, -20px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  /* -- End animation fusée -- */
+}
+
+@media screen and (min-width: 400px) and (max-width: 767px) {
+  h2 {
+    font-size: 1rem;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
   }
   .title {
     font-size: 2rem;
@@ -300,6 +330,9 @@ footer {
     width: 75px;
     height: 75px;
   }
+  .presentation {
+    flex-direction: column;
+  }
   .presentation-text {
     font-size: 16px;
     background-image: none;
@@ -310,17 +343,32 @@ footer {
     width: 150px;
     height: 150px;
   }
- }
+  .objectif {
+    margin: 20px 0 20px 0;
+  }
+   /* -- animation fusée -- */
+   @keyframes float {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(20px, -20px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  /* -- End animation fusée -- */
+}
 
-@media screen and (min-width: 768px) and (max-width: 1024px) 
-{
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   h2 {
     font-size: 1.5rem;
   }
   header {
     display: flex;
     justify-content: center;
-    margin: 20px 0 0 0 ;
+    margin: 20px 0 0 0;
   }
   .title {
     font-size: 2rem;
@@ -347,7 +395,7 @@ footer {
   #logo {
     height: 120px;
   }
-  .presentation{
+  .presentation {
     margin: 0;
   }
   .presentation-text {
@@ -357,8 +405,3 @@ footer {
     width: 100%;
   }
 }
-
-
-
-
-
