@@ -77,7 +77,6 @@ footer {
   padding: 10px ; /*spécifie la taille de la marge entre le texte et le cadre.*/
   text-align: center ; /*centre le texte dans le cadre.*/
   justify-content: center;
-  
 }
 
 .presentation-text {
@@ -90,8 +89,6 @@ footer {
   height: 150px;
   background-image: url("/images/paillettes.png");
 }
-
-
 
 .objectif {
   margin-right: 20px;
