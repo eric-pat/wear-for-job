@@ -67,6 +67,39 @@ footer {
   justify-content: center;
 }
 
+.presentation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  width: fit-content; /*adapte la taille du cadre au texte*/
+  margin: 50px;
+  padding: 10px ; /*spécifie la taille de la marge entre le texte et le cadre.*/
+  text-align: center ; /*centre le texte dans le cadre.*/
+  justify-content: center;
+  
+}
+
+.presentation-text {
+  width: 65%;
+  font-size: 26px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: rgb(5, 5, 92) ; /*détermine la couleur de fond de l'encadrement.*/
+  height: 150px;
+  background-image: url("/images/paillettes.png");
+}
+
+
+
+.objectif {
+  margin-right: 20px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+
 .logo {
   height: 100px;
 }
@@ -202,6 +235,25 @@ footer {
     footer {
       padding-bottom: 10px;
     }
+    .presentation {
+      flex-direction: column;
+      margin: 0px;
+      padding: 0px;
+    }
+    .presentation-text {
+      width: 100%;
+      font-size: 16px;
+      background-image: none;
+      padding: 5px;
+      align-items: normal;
+    }
+    #fusee {
+      width: 150px;
+      height: 150px;
+    }
+    .objectif {
+      margin: 20px 0 20px 0;
+    }
    }
 
 @media screen and (min-width: 400px) and (max-width: 767px)
@@ -248,6 +300,16 @@ footer {
     width: 75px;
     height: 75px;
   }
+  .presentation-text {
+    font-size: 16px;
+    background-image: none;
+    padding: 5px;
+    width: 100%;
+  }
+  #fusee {
+    width: 150px;
+    height: 150px;
+  }
  }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) 
@@ -284,6 +346,15 @@ footer {
   }
   #logo {
     height: 120px;
+  }
+  .presentation{
+    margin: 0;
+  }
+  .presentation-text {
+    font-size: 19px;
+    background-image: none;
+    padding: 5px;
+    width: 100%;
   }
 }
 
