@@ -87,12 +87,12 @@ footer {
   align-items: center;
   background-color: rgb(5, 5, 92) ; /*détermine la couleur de fond de l'encadrement.*/
   height: 150px;
-  background-image: url("/images/paillettes.png");
 }
 
 .objectif {
   margin-right: 20px;
   height: 150px;
+  width: 150px;
   display: flex;
   justify-content: center;
 }
