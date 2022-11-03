@@ -74,7 +74,6 @@ footer {
   color: white;
   width: fit-content; /*adapte la taille du cadre au texte*/
   margin: 50px;
-  padding: 10px ; /*spécifie la taille de la marge entre le texte et le cadre.*/
   text-align: center ; /*centre le texte dans le cadre.*/
   justify-content: center;
 }
@@ -87,6 +86,8 @@ footer {
   align-items: center;
   background-color: rgb(5, 5, 92) ; /*détermine la couleur de fond de l'encadrement.*/
   height: 150px;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .objectif {
@@ -95,6 +96,7 @@ footer {
   width: 150px;
   display: flex;
   justify-content: center;
+  
 }
 
 .logo {
@@ -183,7 +185,7 @@ footer {
 @media screen and (max-width: 399px)
   {
     h2 {
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
     header {
       display: flex;
@@ -243,6 +245,7 @@ footer {
       background-image: none;
       padding: 5px;
       align-items: normal;
+      border-radius: 0px;
     }
     #fusee {
       width: 150px;
